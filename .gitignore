@@ -1,0 +1,79 @@
+# =========================
+# Python / FastAPI / ML Project
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.envrc
+.venv/
+*.env
+
+# Conda environment folders
+*.conda
+*.yml~
+*.yaml~
+.env.yaml
+.env.yml
+.conda_env/
+conda-meta/
+pkgs/
+
+# Build / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter / Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset / model outputs
+datasets/
+models/
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.onnx
+*.model
+*.csv
+*.zip
+
+# Logs / debug
+*.log
+logs/
+debug.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Uvicorn / FastAPI
+*.db
+__pycache__/
+*.sqlite3

@@ -1,0 +1,24 @@
+# Ignore Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pdb
+*.db
+*.log
+
+# Ignore local data, models, and datasets
+datasets/
+models/
+*.csv
+
+# Ignore virtual environments and system files
+venv/
+.env
+.git
+.gitignore
+*.yaml
+*.yml
+
+# Editor / IDE settings
+.vscode/
+.idea/

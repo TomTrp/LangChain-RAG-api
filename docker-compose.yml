@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: llm-rag-fastapi-app
+    ports:
+      - "8000:8000" # FastAPI on host 8000
+    environment:
+       - HUGGINGFACEHUB_API_TOKEN=${HUGGINGFACEHUB_API_TOKEN}
+    volumes:
+      - ./docs:/app/docs
+      - ./chroma_db:/app/chroma_db
+    depends_on:
+      - chroma
+
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: chroma
+    ports:
+      - "8001:8000"  # Chroma server on host 8001
+    volumes:
+      - ./chroma_db:/data
+    command: run --path /data --host 0.0.0.0 --port 8000
