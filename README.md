@@ -55,6 +55,7 @@ Each .txt file will be automatically loaded and embedded into Chroma.
 | `GET` | `/ask?question=...` | Ask a question — LLM answers based only on the documents |
 
 - Example JSON Request:
+  
   /ask?question=How to make smoothies
 
 - Example Response:
