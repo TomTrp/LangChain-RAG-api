@@ -12,8 +12,15 @@ def get_chroma_setting():
 
 def create_vectorstore(client: Settings, documents, embedding):
    vectorstore = Chroma.from_documents(
-        client_settings=client,  # connect to docker server
+        # client_settings=client,  # connect to docker server
         documents=documents,
         embedding=embedding,
+        collection_name="my_langchain_collection",
     )
+   
+#    vector_store = Chroma.from_texts(
+#         texts=documents,
+#         embedding=embedding,
+#         collection_name="my_langchain_collection",
+#     )
    return vectorstore
